@@ -1,56 +1,44 @@
 # ML Fundamentals
 
-A collection of machine learning projects exploring fundamental concepts and algorithms.
+ML projects with Jupyter notebooks. Linear regression, housing price prediction, and logistic regression.
 
-## Project Structure
 
-### 📊 Linear Regression
-**Folder:** `linear-regression/`
+## Projects
 
-Introduction to linear regression fundamentals using a bikers dataset. Learn how to model relationships between variables and make predictions.
+### Linear Regression
+- `linear-regression.ipynb` - Linear regression fundamentals
+- `bikers_data.csv` - Bikers dataset
 
-- `linear-regression.ipynb` - Main notebook with implementations and examples
-- `bikers_data.csv` - Dataset containing biking/weather data
-
-### 🏠 Housing Price Regression
-**Folder:** `housing-price-regression/`
-
-Apply regression techniques to predict house prices. A practical project that demonstrates real-world regression applications.
-
-- `housing-price-regression.ipynb` - Complete project notebook
+### Housing Price Regression
+- `housing-price-regression.ipynb` - Predict house prices
 - `house_prices.txt` - Housing dataset
 
-### 🔀 Logistic Regression
-**Folder:** `logistic-regression/`
+### Logistic Regression
+- `logistic-regression.ipynb` - Classification on spiral data
+- `spiral_features.npy` - Feature data
+- `spiral_target.npy` - Target labels
 
-Classification using logistic regression. Includes work with spiral datasets for non-linear classification problems.
+### CUDA Check
+- `cuda-environment-check.ipynb` - Verify GPU setup
 
-- `logistic-regression.ipynb` - Logistic regression implementations
-- `spiral_features.npy` - Feature data for spiral classification
-- `spiral_target.npy` - Target labels for spiral data
+---
 
-### 🖥️ CUDA Environment Check
-**File:** `cuda-environment-check.ipynb`
+## Setup
 
-Utility notebook for verifying CUDA setup and GPU availability on your system.
+Everything runs in Docker. No local installation needed.
 
-## Getting Started
+```bash
+docker-compose up --build
+```
 
-Each project is self-contained as a Jupyter notebook. To get started:
+Access Jupyter at [http://localhost:8888](http://localhost:8888) - no password required.
 
-1. Install required dependencies (NumPy, Pandas, Scikit-learn, Matplotlib, etc.)
-2. Open any notebook in Jupyter and run the cells
-3. Experiment with the code and modify parameters to deepen your understanding
+Stop with:
+```bash
+docker-compose down
+```
 
-## Requirements
+---
 
-- Python 3.7+
-- Jupyter Notebook
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib
+Each notebook is self-contained and can be run independently.
 
-## License
-
-Feel free to use and modify these projects for learning purposes.
